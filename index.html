@@ -22,9 +22,111 @@
         <a id="navMenuIcon" class="navbar-brand" href="#"> <i class="fa fa-bars"></i> </a>
       </div>
     </nav>
+
     <div id="sidNavID" class="sidNavClose"></div>
+
+    <div id="contentOverlayID" class="contentOverlayClose"></div>
+
+    <div class="mainContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- card -->
+            <div class="card" style="width: 18rem">
+              <img src="img/about-us.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- card -->
+            <div class="card" style="width: 18rem">
+              <img src="img/about-us.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- card -->
+            <div class="card" style="width: 18rem">
+              <img src="img/about-us.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <!-- card -->
+            <div class="card" style="width: 18rem">
+              <img src="img/about-us.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- card -->
+            <div class="card" style="width: 18rem">
+              <img src="img/about-us.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- card -->
+            <div class="card" style="width: 18rem">
+              <img src="img/about-us.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- jquery js -->
     <script src="js/jquery3.js"></script>
+
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -33,13 +135,36 @@
     <script type="text/javascript">
       $("#navMenuIcon").click(function () {
         let sidNavID = $("#sidNavID");
+        let contentOverlayID = $("#contentOverlayID");
 
         if (sidNavID.hasClass("sidNavClose")) {
           sidNavID.removeClass("sidNavClose");
           sidNavID.addClass("sidNavOpen");
+          contentOverlayID.removeClass("contentOverlayClose");
+          contentOverlayID.addClass("contentOverlay");
         } else {
           sidNavID.removeClass("sidNavOpen");
           sidNavID.addClass("sidNavClose");
+          contentOverlayID.removeClass("contentOverlay");
+          contentOverlayID.addClass("contentOverlayClose");
+        }
+      });
+
+      //
+      $("#contentOverlayID").click(function () {
+        let sidNavID = $("#sidNavID");
+        let contentOverlayID = $("#contentOverlayID");
+
+        if (sidNavID.hasClass("sidNavClose")) {
+          sidNavID.removeClass("sidNavClose");
+          sidNavID.addClass("sidNavOpen");
+          contentOverlayID.removeClass("contentOverlayClose");
+          contentOverlayID.addClass("contentOverlay");
+        } else {
+          sidNavID.removeClass("sidNavOpen");
+          sidNavID.addClass("sidNavClose");
+          contentOverlayID.removeClass("contentOverlay");
+          contentOverlayID.addClass("contentOverlayClose");
         }
       });
     </script>

@@ -8,13 +8,14 @@
 
 .sidNavOpen {
     height: 100%;
-    width: 25%;
+    width: 220px;
     background-color: aquamarine ;
     position: fixed;
     top: 0;
     left: 0;
     overflow-y: hidden;
     transition: 0.1s;
+    z-index: 10;
    
 }
 .sidNavClose {
@@ -29,4 +30,22 @@
     
     padding-top: 20px;
 }
+.contentOverlay{
+   display: block;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5); 
+   z-index: 7;
+   cursor: pointer;
+}
+.contentOverlayClose{
+    display: none;
+}
 
+.mainContent{
+    z-index: 5;
+    margin-top: 70px;
+}
