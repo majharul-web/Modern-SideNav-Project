@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fonawsome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!--Main css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a id="navMenuIcon" class="navbar-brand" href="#"> <i class="fa fa-bars"></i> </a>
+      </div>
+    </nav>
+    <div id="sidNavID" class="sidNavClose"></div>
+    <!-- jquery js -->
+    <script src="js/jquery3.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main jquery code -->
+
+    <script type="text/javascript">
+      $("#navMenuIcon").click(function () {
+        let sidNavID = $("#sidNavID");
+
+        if (sidNavID.hasClass("sidNavClose")) {
+          sidNavID.removeClass("sidNavClose");
+          sidNavID.addClass("sidNavOpen");
+        } else {
+          sidNavID.removeClass("sidNavOpen");
+          sidNavID.addClass("sidNavClose");
+        }
+      });
+    </script>
+  </body>
+</html>

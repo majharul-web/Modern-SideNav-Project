@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+.sidNavOpen {
+    height: 100%;
+    width: 25%;
+    background-color: aquamarine ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: 0.1s;
+   
+}
+.sidNavClose {
+    height: 100%;
+    width: 0px;
+    background-color: aquamarine ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: 0.1s;
+    
+    padding-top: 20px;
+}
+
