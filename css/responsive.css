@@ -1,0 +1,12 @@
+@media (max-width:575.98px) {
+
+    .mainContent{
+           margin-left: 00px;
+    }
+    .sidNavClose {
+      
+       visibility: hidden;
+        
+    }
+   
+}

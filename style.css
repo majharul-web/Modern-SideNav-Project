@@ -6,29 +6,46 @@
 
 }
 
+.navMenuBar{
+    color: #FE0152 !important;
+    font-size: 24px !important;
+}
+.navMenueItem2{
+    text-decoration: none;
+    color: white;
+}
+
+.navMenueItem2:hover{
+    text-decoration: none;
+    color: white;
+    border-left: 5px solid white;
+    transition: 0.1s;
+}
+
 .sidNavOpen {
     height: 100%;
-    width: 220px;
-    background-color: aquamarine ;
+    width: 250px;
+    background-color: #FE0152;
     position: fixed;
     top: 0;
     left: 0;
     overflow-y: hidden;
     transition: 0.1s;
     z-index: 10;
+    margin-top: 60px;
    
 }
 .sidNavClose {
     height: 100%;
-    width: 0px;
-    background-color: aquamarine ;
+    width: 65px;
+    background-color: #FE0152 ;
     position: fixed;
     top: 0;
     left: 0;
     overflow-y: hidden;
     transition: 0.1s;
-    
-    padding-top: 20px;
+    margin-top: 60px;
+    z-index: 10;
 }
 .contentOverlay{
    display: block;
@@ -47,5 +64,6 @@
 
 .mainContent{
     z-index: 5;
-    margin-top: 70px;
+    margin-top: 80px;
+    margin-left: 65px;
 }
