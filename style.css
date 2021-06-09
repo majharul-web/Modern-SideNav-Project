@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 0;
+   
 
 }
 
 .navMenuBar{
-    color: #FE0152 !important;
+    color: #CE37B6 !important;
     font-size: 24px !important;
 }
 .navMenueItem2{
@@ -25,7 +25,7 @@
 .sidNavOpen {
     height: 100%;
     width: 250px;
-    background-color: #FE0152;
+    background-color: #CE37B6;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@
 .sidNavClose {
     height: 100%;
     width: 65px;
-    background-color: #FE0152 ;
+    background-color: #CE37B6 ;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,7 +54,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background-color: rgba(0, 0, 0, 0.5); 
+   background-color: rgba(0, 0, 0, 0.4); 
    z-index: 7;
    cursor: pointer;
 }

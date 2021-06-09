@@ -17,12 +17,14 @@
   </head>
 
   <body>
+    <!-- top Nav -->
     <nav class="navbar shadow fixed-top navbar-light bg-light">
       <div class="container">
         <a id="navMenuIcon" class="navbar-brand navMenuBar" href="#"> <i class="fa fa-bars"></i> </a>
       </div>
     </nav>
 
+    <!-- sideNAV Menu -->
     <div id="sidNavID" class="sidNavClose">
       <a class="navMenueItem2" href="#"
         ><i class="fa m-3 fa-home"></i><span class="menuText d-none">Home</span></a
@@ -41,54 +43,15 @@
       >
     </div>
 
+    <!-- overlay section -->
     <div id="contentOverlayID" class="contentOverlayClose"></div>
 
+    <!-- main content -->
     <div class="mainContent">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <!-- card -->
-            <div class="card" style="width: 100%">
-              <img src="img/about-us.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <!-- card -->
-            <div class="card" style="width: 100%">
-              <img src="img/about-us.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <!-- card -->
-            <div class="card" style="width: 100%">
-              <img src="img/about-us.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+          <div class="col">
+            <h1>Home</h1>
           </div>
         </div>
       </div>
@@ -100,49 +63,7 @@
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- main jquery code -->
-
-    <script type="text/javascript">
-      $("#navMenuIcon").click(function () {
-        let sidNavID = $("#sidNavID");
-        let contentOverlayID = $("#contentOverlayID");
-        let menuText = $(".menuText");
-
-        if (sidNavID.hasClass("sidNavClose")) {
-          sidNavID.removeClass("sidNavClose");
-          sidNavID.addClass("sidNavOpen");
-
-          menuText.removeClass("d-none");
-
-          contentOverlayID.removeClass("contentOverlayClose");
-          contentOverlayID.addClass("contentOverlay");
-        } else {
-          sidNavID.removeClass("sidNavOpen");
-          sidNavID.addClass("sidNavClose");
-
-          menuText.addClass("d-none d-none");
-          contentOverlayID.removeClass("contentOverlay");
-          contentOverlayID.addClass("contentOverlayClose");
-        }
-      });
-
-      //
-      $("#contentOverlayID").click(function () {
-        let sidNavID = $("#sidNavID");
-        let contentOverlayID = $("#contentOverlayID");
-
-        if (sidNavID.hasClass("sidNavClose")) {
-          sidNavID.removeClass("sidNavClose");
-          sidNavID.addClass("sidNavOpen");
-          contentOverlayID.removeClass("contentOverlayClose");
-          contentOverlayID.addClass("contentOverlay");
-        } else {
-          sidNavID.removeClass("sidNavOpen");
-          sidNavID.addClass("sidNavClose");
-          contentOverlayID.removeClass("contentOverlay");
-          contentOverlayID.addClass("contentOverlayClose");
-        }
-      });
-    </script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
   </body>
 </html>
